@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<title>PRACTICAL 12</title>
+<html>
+<body bgcolor="biege">
+ <b>Write a sentence:  </b>
+ <h2>Write a program in JavaScript to accept a sentence from the user and display the  number of words in it. (Do not use split () function)
+</h2>
+ <textarea id="inputField" rows=1 cols="50"></textarea><br><br>
+ <button onclick="countWords()"> Count Words</button> <br>
+ <p> Word Count:<span id="show">0</span></p>
+ <script>
+ function countWords() {
+ var text = document.getElementById("inputField").value;
+ text = text.trim();
+ var numWords = 0;
+ for (var i = 0; i < text.length; i++) {
+ var currentCharacter = text[i];
+ if ((currentCharacter == " ") && (text[i + 1] != " ")) {
+ numWords += 1;
+ }
+ }
+ if (text.length >= 1)
+ numWords += 1;
+ document.getElementById("show")
+ .innerHTML = numWords;
+ }
+ </script>
+</body>
+</html>

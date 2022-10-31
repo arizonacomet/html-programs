@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practical 11</title>
+    <h1>Write a JavaScript program to accept a number from the user and display the sum of  its digits</h1>
+    <script type="text/javascript">
+
+        function sum()
+        {
+            //alert("hi");
+            var n=parseInt(f1.t1.value);
+            var rem=0, sum=0;
+          //  alert("hi");
+            while(n!=0)
+            {
+                rem=n%10;
+                sum=sum+rem;
+                n=Math.floor(n/10);
+                
+            }
+            
+            f1.t2.value=sum
+        }
+    </script>
+</head>
+<body>
+    <form name="f1">
+      Enter a number<input type= "text" name="t1">
+      <br>
+      <input type= "button" value="display" onClick="sum()">
+      <br>
+      <input type= "text" name="t2">
+      <br>
+    </form>
+</body>
+</html>

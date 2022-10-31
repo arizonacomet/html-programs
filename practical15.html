@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRACTICAL 15</title>
+    <h1>ARRAY,BOOLEAN,DATE,FUNCTION,MATH,NUMBER,OBJECT,STRING,REGEX</h1>
+    <script type="text/javascript">
+        var fruitsarray = ["apple", "banana", "mango", "orange", "strawberry"];
+        fruitsarray[0] = "pineapple";
+        for (var i = 0; i < fruitsarray.length; i++) {
+            document.write(fruitsarray[i] + "<br>");
+        }
+        document.write("==*==*==*==*==*==*==*==*==*==*==*==*==");
+        var b = new Boolean(1);
+        document.write("<br>Booleanof(1)" + b + "<br>");
+        document.write("==*==*==*==*==*==*==*==*==*==*==*==*==");
+
+        var txt1 = new String("JAVA");
+        var txt2 = "SCRIPT";
+        document.write("<br>LENGTH OF (TXT1 i.e) JAVA: " + txt1.length + "<br>");
+        document.write("<br>CHAR AT INDEX OF 0 OF JAVA IS: " + txt1.charAt(0) + "<br>");
+        document.write("<br>CHAR AT INDEX OF 3 OF JAVA IS: " + txt1.charAt(3) + "<br>");
+        document.write("<br>CONCATENATING TWO STRINGS i.e TX1 AND TXT2: " + txt1.concat(txt2) + "<br>");
+        document.write("<br>CONVERTING ALL LETTERS OF TXT1 TO LOWERCASE: " + txt1.toLowerCase() + "<br>");
+        document.write("<br>INDEX OF A IN (TXT1 i.e) JAVA: " + txt1.indexOf("A") + "<br>");
+        document.write("<br>LAST INDEX OF A IN (TXT1 i.e) JAVA: " + txt1.lastIndexOf("A") + "<br>");
+        document.write("<br>SPLIT OF (TXT1 i.e) JAVA: " + txt1.split("") + "<br>");
+        document.write("==*==*==*==*==*==*==*==*==*==*==*==*==");
+
+        document.write("<br>MATH PI:  " + Math.PI + "<br>");
+        document.write(" <br> MATH E:  " + Math.E + "<br>");
+        document.write(" <br> MATH SQUARE ROOT OF 2:  " + Math.SQRT2 + "<br>");
+        document.write(" <br> MATH LOG OF 10(LN 10):  " + Math.LN10 + "<br>");
+        document.write("==*==*==*==*==*==*==*==*==*==*==*==*==");
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        document.write("<br>CURRENT TIME: " + h + ":" + m + ":" + s + "<br>");
+        document.write("==*==*==*==*==*==*==*==*==*==*==*==*==<br>");
+        var str = "Hello bca Student";
+        var regEx = /BCA/i;
+        alert(str.search(regEx));
+        ocument.write("<br>==*==*==*==*==*==*==*==*==*==*==*==*==<br>");
+
+        function msg() {
+            alert("hello! this is message");
+        }
+
+    </script>
+</head>
+
+<body>
+    <input type="button" onclick="msg()" value="call function" />
+
+</body>
+
+</html>

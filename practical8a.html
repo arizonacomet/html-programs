@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRACTICAL 8a</title>
+</head>
+<h1>Using JavaScript design, a web page that prints factorial.</h1>
+<script type="text/javascript">
+  function fact()
+   {
+    var f=1;
+    var a=parseInt(p9.t1.value);
+    while (a>0)
+    {
+
+        f=f*a;
+        a--;
+    }
+    
+     p9.p2.value=f;
+  }
+</script>
+</head>
+<body background="wallpaperflare.com_wallpaper.jpg">
+  
+    <form name ="p9">
+      <table>
+          <tr>
+              <td>ENTER THE NUMBER</td>
+              <td><input type="text" name="t1"></td>
+          </tr>
+      <tr>
+         <td>RESULT</td>
+         <td><input type ="text" name="p2"></td>
+        </tr>
+     <tr>
+          <td><input type="reset" value="CLEAR "></td>
+         <td><input type="button" name="b1" value="check" onClick="fact()"></td>
+     </tr>
+   </table>
+</form>
+</body>
+</html>

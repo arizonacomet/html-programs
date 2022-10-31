@@ -1,0 +1,83 @@
+<html>
+<head>
+
+<title> Javascript Validation Prac 9</title>
+<script >
+function val()
+{
+
+var a=f.t1.value;
+
+
+var c=f.t3.value;
+var d=f.t4.value;
+
+
+            if (a==null || a=="")
+	{  
+ 	 alert("NAME CANNOT BE BLANK");  
+  	return false;
+	}
+ if(d==null || d==""||c==null || c=="")
+	{  
+ 	 alert("PASSWORD CANNOT BE BLANK");  
+  	return false;
+	}
+	
+
+	 if(isNaN(c)||c<=0)
+	{
+	alert("Password can only have numbers");
+	 return false;
+	}
+	if(c.length<8)
+	{  
+ 	 alert("Password must be at least 8 characters long.");  
+ 	 return false;  
+ 	 }  
+
+
+
+	 if(c!=d)
+	{
+	alert("PASSWORD DOES NOT MATCH , PLEASE ENTER AGAIN");
+	 return false;
+	}
+
+	else
+	{
+	alert("Information submitted successfully");
+	}
+	}
+</script>
+</head>
+
+<body bgcolor="lightgreen" align="center">
+<h1> LOG IN </h1>
+<form name="f" action ="validate.html"onsubmit=" return val()">
+
+<table align="center">
+<tr>
+<td>ENTER NAME</td>
+<td><input type="text" name="t1"></td>
+</tr>
+
+
+<tr>
+<td>ENTER PASSWORD</td>
+<td><input type="password" name="t3"></td>
+</tr>
+
+<tr>
+<td>RE ENTER PASSWORD</td> 
+<td><input type="password" name="t4"></td>
+</tr>
+
+<tr>
+<td colspan="2"><input type="submit" value="submit" ></td> 
+
+</tr>
+</table>
+</form>
+</body>
+</html>
